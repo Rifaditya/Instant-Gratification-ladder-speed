@@ -54,10 +54,12 @@ Vanilla heavily suppresses sliding down if you are on a ladder.
 The mod works out of the box with zero setup.
 
 * **Global Template**: `config/ladder-speed.json` (Sets defaults for new worlds - handled by DasikLibrary)
-* **In-Game**: Use `/gamerule ladderspeed.` for core settings.
-  * `climbSpeed`: Base climbing speed multiplier (Default: 100)
-  * `descendSpeed`: Base descending speed multiplier (Default: 100)
-  * `sprintMultiplier`: Extra boost multiplier when sprinting (Default: 150)
+* **In-Game**: Use ```sql
+/gamerule ladderspeed.climb_speed 200     → Double standard climb speed
+/gamerule ladderspeed.sprint_multiplier 150 → 1.5x boost when sprinting
+/gamerule ladderspeed.descend_speed 200   → Double slide down speed
+/gamerule ladderspeed.snap_descend true   → Enable looking down to drop fast
+```: Extra boost multiplier when sprinting (Default: 150)
   * `snapDescend`: Toggle the look-down quick descent feature (Default: true)
 
 ![Config Screenshot](https://raw.githubusercontent.com/Rifaditya/Instant-Gratification-ladder-speed/main/Images/ConfigGUI.png)

@@ -1,11 +1,11 @@
 {
-    "gamerule.ladderspeed.climbSpeed": "Ladder Climb Speed",
-    "gamerule.ladderspeed.climbSpeed.description": "Percentage multiplier for vertical climb speed on ladders. (100 = 1.0x)",
-    "gamerule.ladderspeed.sprintMultiplier": "Ladder Sprint Multiplier",
-    "gamerule.ladderspeed.sprintMultiplier.description": "Percentage multiplier for ladder climb speed while sprinting. (150 = 1.5x)",
-    "gamerule.ladderspeed.descendSpeed": "Ladder Descend Speed",
-    "gamerule.ladderspeed.descendSpeed.description": "Percentage multiplier for sliding down ladders. (100 = 1.0x)",
-    "gamerule.ladderspeed.snapDescend": "Ladder Snap Descend",
-    "gamerule.ladderspeed.snapDescend.description": "When enabled, looking down while on a ladder will significantly speed up descent.",
+    "gamerule.ladderspeed.climb_speed": "Ladder Climb Speed",
+    "gamerule.ladderspeed.climb_speed.description": "Percentage multiplier for vertical climb speed on ladders. (100 = 1.0x)",
+    "gamerule.ladderspeed.sprint_multiplier": "Ladder Sprint Multiplier",
+    "gamerule.ladderspeed.sprint_multiplier.description": "Percentage multiplier for ladder climb speed while sprinting. (150 = 1.5x)",
+    "gamerule.ladderspeed.descend_speed": "Ladder Descend Speed",
+    "gamerule.ladderspeed.descend_speed.description": "Percentage multiplier for sliding down ladders. (100 = 1.0x)",
+    "gamerule.ladderspeed.snap_descend": "Ladder Snap Descend",
+    "gamerule.ladderspeed.snap_descend.description": "When enabled, looking down while on a ladder will significantly speed up descent.",
     "gamerule.category.ladderspeed": "Ladder Speed Rules"
 }
