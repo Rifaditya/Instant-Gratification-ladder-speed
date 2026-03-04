@@ -1,0 +1,32 @@
+{
+    "schemaVersion": 1,
+    "id": "ladder-speed",
+    "version": "1.0.0+build.1",
+    "name": "Ladder Speed",
+    "description": "Configurable faster ladders and quick descent.",
+    "authors": [
+        "DasikIgaijin"
+    ],
+    "contact": {
+        "homepage": "https://github.com/Rifaditya/Instant-Gratification-ladder-speed",
+        "sources": "https://github.com/Rifaditya/Instant-Gratification-ladder-speed"
+    },
+    "license": "GPL-3.0-or-later",
+    "icon": "assets/ladderspeed/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "net.instantgratification.ladderspeed.LadderSpeedFabric"
+        ]
+    },
+    "mixins": [
+        "ladderspeed.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.16.9",
+        "minecraft": "~26.1-",
+        "java": ">=25",
+        "fabric-api": "*",
+        "dasik-library": "*"
+    }
+}
