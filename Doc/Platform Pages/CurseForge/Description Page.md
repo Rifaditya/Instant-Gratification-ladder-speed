@@ -1,67 +1,99 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Rifaditya/Instant-Gratification-ladder-speed/main/src/main/resources/assets/ladderspeed/icon.png" alt="Ladder Speed Icon" width="128"/>
-  <h1>Ladder Speed</h1>
-  <p><b>A Minecraft mod that lets you configure how fast you climb ladders, speeds up climbing when sprinting, and lets you slide down instantly by looking down.</b></p>
 
-  <p>
-    <img src="https://img.shields.io/badge/Minecraft-26.1+-brightgreen.svg" alt="Minecraft Version">
-    <img src="https://img.shields.io/badge/Loader-Fabric-blue.svg" alt="Mod Loader">
-    <img src="https://img.shields.io/badge/Requirement-Dasik_Library-orange.svg" alt="Library Required">
-  </p>
+![Banner Image](PLACEHOLDER_LINK)
+
 </div>
+<p align="center">
+    <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api"><img src="https://img.shields.io/badge/Requires-Fabric_API-blue?style=for-the-badge&logo=fabric" alt="Requires Fabric API"></a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/dasik-libary"><img src="https://img.shields.io/badge/Requires-Dasik_Library-orange?style=for-the-badge&logo=curseforge" alt="CurseForge: Dasik Library"></a>
+    <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=java" alt="Java">
+    <img src="https://img.shields.io/badge/License-GPLv3-green?style=for-the-badge" alt="License">
+    <img src="https://img.shields.io/badge/Minecraft-26.1+-brightgreen?style=for-the-badge" alt="Minecraft 26.1+">
+</p>
+
+# 🪜 Ladder Speed
+
+**No Backports:** This mod targets **Minecraft 26.1+**. Older versions are unsupported.
+
+> **"Fluid verticality. No friction."**
+
+**Ladder Speed** unlocks your vertical movement. Whether you want to climb ladders twice as fast, sprint up them, or slide down instantly when looking down, this mod gives you the control you deserve.
+
+Part of the **Instant Gratification Collection** — mods that respect the player's time.
 
 ---
 
-### 🧱 What is Vanilla?
-Vanilla ladders are slow and agonizing. You crawl up them at a fixed, unchangeable pace, regardless of whether you are walking or sprinting. Going down isn't much better, often resulting in tedious shaft descents.
+## ✨ Features
 
-### 🚀 What is Ladder Speed?
-An **Instant Gratification** module that completely unlocks vertical movement. Climb at your own pace, get a boost when sprinting, and snap downwards instantly by looking down. Fully configurable via GameRules so you can dial in the perfect friction.
+<p align="center">
+  ![Feature Screenshot](PLACEHOLDER_LINK)
+</p>
 
----
+### 🏃 Sprint Climbing
+Hold your sprint key while on a ladder to receive a massive speed boost. 
 
-### ✨ Features (Zero Hallucination Guaranteed)
+### ⚙️ Configurable Base Speed
+Vanilla ladders are slow and agonizing. This mod lets you adjust the default climbing & descending speeds independently to match your modpack's pacing.
 
-*   🏃 **Sprint Climbing**: Hold your sprint key while on a ladder to receive a configurable speed boost (Default: 1.5x speed).
-*   ⚙️ **Configurable Base Speed**: Adjust the default climbing & descending speeds independently to match your modpack's pacing.
-*   ⬇️ **Snap Descend**: enabled by default. Look straight down (>45 degrees) while on a ladder to let gravity take over, sliding down significantly faster than sneaking.
+### ⬇️ Snap Descend
+Look straight down (>45 degrees) while on a ladder to let gravity take over. You will slide down significantly faster than sneaking, making shaft descents painless.
 
-*(Note: Requires the **Dasik Library** for the dynamic configuration menu).*
+### ⚙️ Pure GameRules Control
+No config files to manage. Everything lives in the **Edit Game Rules** screen or via standard commands.
 
----
+<p align="center">
+  ![Feature Screenshot](PLACEHOLDER_LINK)
+</p>
 
-### 🛠️ Configuration (Dasik Library UI)
-
-All options are accessible in the Game Menu via Dasik Library's advanced GameRule system:
-> [!NOTE] 
-> Because Minecraft natively lacks float entry fields, multipliers are represented as integer percentages. `100` = 1.0x vanilla speed.
-
-*   `ladderspeed.climbSpeed` (Int) - Base climbing speed multiplier (Default: 100).
-*   `ladderspeed.sprintMultiplier` (Int) - Extra boost multiplier when sprinting (Default: 150).
-*   `ladderspeed.descendSpeed` (Int) - Base descending speed multiplier (Default: 100).
-*   `ladderspeed.snapDescend` (Bool) - Toggle the look-down quick descent feature (Default: true).
+- **Real-Time Tuning**: Adjust settings without restarting.
+- **Dynamic Settings**: Configurable via DasikLibrary's dynamic rule manager.
 
 ---
 
-### 🧩 Compatibility Matrix
+## 📋 Quick Start
 
-| Environment | Status | Notes |
-| :--- | :---: | :--- |
-| **Singleplayer** | ✅ | Works perfectly out of the box. |
-| **Multiplayer** | ✅ | Server-side authoritative. GameRules sync perfectly to clients via DasikLibrary. |
-| **Vanilla Clients** | ❌ | Requires mod installation on both server and client (adjusts client-side prediction logic). |
+```sql
+/gamerule ladderspeed.climbSpeed 200     → Double standard climb speed
+/gamerule ladderspeed.sprintMultiplier 150 → 1.5x boost when sprinting
+/gamerule ladderspeed.descendSpeed 200   → Double slide down speed
+/gamerule ladderspeed.snapDescend true   → Enable looking down to drop fast
+```
 
 ---
 
-### ❤️ Support the Zenith Architecture
-If this mod removes a tiny bit of friction from your day, consider supporting my caffeine dependency so I can build more of them.
+## ☕ Support
+
+If you enjoy the **Instant Gratification** collection, consider fueling the next update!
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Me-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/dasikigaijin/tip)
+[![SocioBuzz](https://img.shields.io/badge/SocioBuzz-Local_Support-7BB32E?style=for-the-badge)](https://sociabuzz.com/dasikigaijin/tribe)
+
+> [!NOTE]
+> **Indonesian Users:** SocioBuzz supports local payment methods (Gopay, OVO, Dana, etc.) if you want to support me without using PayPal/Ko-fi!
+
+---
+
+## 📜 Credits
+
+| Role | Author |
+| :--- | :--- |
+| **Creator** | **Rifaditya** (Dasik) |
+| **Collection** | Instant Gratification |
+| **License** | GPLv3 |
+
+---
+
+> [!IMPORTANT]
+> **Modpack Permissions:** You are free to include this mod in modpacks, **provided the modpack is hosted on the same platform** (e.g. CurseForge).
+>
+> **Cross-platform distribution is not permitted.** If you download this mod from CurseForge, your modpack must also be published on CurseForge.
+
+---
 
 <div align="center">
-  <a href="https://ko-fi.com/dasikigaijin"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" height="36" alt="Buy Me a Coffee at ko-fi.com" /></a>
-  <a href="https://sociobuzz.com/rifaditya/"><img src="https://storage.ko-fi.com/cdn/brandasset/sociobuzz.png" height="36" alt="Support via SocioBuzz (ID/E-Wallets)" /></a>
-</div>
 
----
-> **Modpack Permissions**: You are completely free to use this in any modpack. However, absolute prohibition on re-uploading the `.jar` to alternative sites. *Links must point back to Modrinth/CurseForge.*
----
-<p align="center"><i>Made with ❤️ by Rifaditya (Dasik) and the Zenith Framework.</i></p>
+**Made with ❤️ for the Minecraft community**
+
+*Part of the Instant Gratification Collection*
+
+</div>
