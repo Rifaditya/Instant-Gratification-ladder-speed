@@ -1,0 +1,128 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Configure project :
+Fabric Loom: 1.15.4
+The mixin annotation is no longer enabled by default, you should remove any loom.mixin configuration. If you wish to continue to use the mixin AP you can set useLegacyMixinAp = true.
+
+> Task :compileJava FAILED
+.\gradlew : E:\Minecraft Project\ladder
+-speed\src\main\java\net\instantgratifi
+cation\ladderspeed\logic\ClimbingLogic.
+java:14: error: cannot find symbol
+At line:1 char:1
++ .\gradlew build 2>&1 | Out-String | 
+Set-Content error.log
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpeci 
+   fied: (E:\Minecraft Pr...not find   
+  symbol:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCo 
+   mmandError
+ 
+        int climbRule = entity.level().
+getGameRules().get(LadderSpeedRules.CLI
+MB_SPEED);
+                                      ^
+  symbol:   method getGameRules()
+  location: class Level
+E:\Minecraft Project\ladder-speed\src\m
+ain\java\net\instantgratification\ladde
+rspeed\logic\ClimbingLogic.java:17: 
+error: cannot find symbol
+            int sprintRule = entity.lev
+el().getGameRules().get(LadderSpeedRule
+s.SPRINT_MULTIPLIER);
+                                       
+    ^
+  symbol:   method getGameRules()
+  location: class Level
+E:\Minecraft Project\ladder-speed\src\m
+ain\java\net\instantgratification\ladde
+rspeed\logic\ClimbingLogic.java:39: 
+error: cannot find symbol
+            boolean snapDescend = entit
+y.level().getGameRules().get(LadderSpee
+dRules.SNAP_DESCEND);
+                                       
+         ^
+  symbol:   method getGameRules()
+  location: class Level
+E:\Minecraft Project\ladder-speed\src\m
+ain\java\net\instantgratification\ladde
+rspeed\logic\ClimbingLogic.java:45: 
+error: cannot find symbol
+                int descendRule = entit
+y.level().getGameRules().get(LadderSpee
+dRules.DESCEND_SPEED);
+                                       
+         ^
+  symbol:   method getGameRules()
+  location: class Level
+4 errors
+
+[Incubating] Problems report is available at: file:///E:/Minecraft%20Project/ladder-speed/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an 
+exception.
+
+* What went wrong:
+Execution failed for task 
+':compileJava'.
+> Compilation failed; see the compiler 
+output below.
+  E:\Minecraft Project\ladder-speed\src
+\main\java\net\instantgratification\lad
+derspeed\logic\ClimbingLogic.java:14: 
+error: cannot find symbol
+          int climbRule = entity.level(
+).getGameRules().get(LadderSpeedRules.C
+LIMB_SPEED);
+                                       
+ ^
+    symbol:   method getGameRules()
+    location: class Level
+  E:\Minecraft Project\ladder-speed\src
+\main\java\net\instantgratification\lad
+derspeed\logic\ClimbingLogic.java:17: 
+error: cannot find symbol
+              int sprintRule = entity.l
+evel().getGameRules().get(LadderSpeedRu
+les.SPRINT_MULTIPLIER);
+                                       
+      ^
+    symbol:   method getGameRules()
+    location: class Level
+  E:\Minecraft Project\ladder-speed\src
+\main\java\net\instantgratification\lad
+derspeed\logic\ClimbingLogic.java:39: 
+error: cannot find symbol
+              boolean snapDescend = ent
+ity.level().getGameRules().get(LadderSp
+eedRules.SNAP_DESCEND);
+                                       
+           ^
+    symbol:   method getGameRules()
+    location: class Level
+  E:\Minecraft Project\ladder-speed\src
+\main\java\net\instantgratification\lad
+derspeed\logic\ClimbingLogic.java:45: 
+error: cannot find symbol
+                  int descendRule = ent
+ity.level().getGameRules().get(LadderSp
+eedRules.DESCEND_SPEED);
+                                       
+           ^
+    symbol:   method getGameRules()
+    location: class Level
+  4 errors
+
+* Try:
+> Check your code and dependencies to 
+fix the compilation error(s)
+> Run with --scan to get full insights 
+from a Build Scan (powered by 
+Develocity).
+
+BUILD FAILED in 21s
+1 actionable task: 1 executed
+

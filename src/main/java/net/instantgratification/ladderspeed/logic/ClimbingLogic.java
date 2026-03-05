@@ -11,9 +11,14 @@ public class ClimbingLogic {
         if (!entity.onClimbable()) {
             return 1.0f;
         }
-        float multiplier = DynamicGameRuleManager.getInt(entity.level(), LadderSpeedRules.CLIMB_SPEED) / 100.0f;
+        int climbRule = DynamicGameRuleManager.getInt(entity.level(), LadderSpeedRules.CLIMB_SPEED);
+        if (climbRule <= 0) climbRule = 100; // Mitigation for client-side unregistered rule returning 0
+        float multiplier = climbRule / 100.0f;
+        
         if (entity.isSprinting()) {
-            multiplier *= DynamicGameRuleManager.getInt(entity.level(), LadderSpeedRules.SPRINT_MULTIPLIER) / 100.0f;
+            int sprintRule = DynamicGameRuleManager.getInt(entity.level(), LadderSpeedRules.SPRINT_MULTIPLIER);
+            if (sprintRule <= 0) sprintRule = 150;
+            multiplier *= sprintRule / 100.0f;
         }
         return multiplier;
     }
@@ -40,7 +45,9 @@ public class ClimbingLogic {
             if (snapDescend && entity.getXRot() > 45.0f && !entity.isSuppressingSlidingDownLadder()) {
                 yd = -0.4; // Force slide down significantly faster
             } else {
-                float descendSpeedMultiplier = DynamicGameRuleManager.getInt(entity.level(), LadderSpeedRules.DESCEND_SPEED) / 100.0f;
+                int descendRule = DynamicGameRuleManager.getInt(entity.level(), LadderSpeedRules.DESCEND_SPEED);
+                if (descendRule <= 0) descendRule = 100;
+                float descendSpeedMultiplier = descendRule / 100.0f;
                 yd *= descendSpeedMultiplier;
             }
         }
