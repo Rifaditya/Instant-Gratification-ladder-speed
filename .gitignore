@@ -5,3 +5,7 @@ build/
 # Platform Publisher API Token Security Vault
 *platform_tokens.json
 .agents/config/platform_tokens.json
+
+# Local Wiki Git Repositories
+.wiki/
+**/.wiki/
