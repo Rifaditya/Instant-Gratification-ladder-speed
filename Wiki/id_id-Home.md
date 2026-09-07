@@ -8,8 +8,8 @@ Pilih versi Minecraft Anda:
 
 | Minecraft Version | Documentation Portal |
 | :--- | :--- |
-| **Minecraft 26.1** | [[👉 MC 26.1|26.1-Home]] |
-| **Minecraft 26.3** | [[👉 MC 26.3|26.3-Home]] |
+| **Minecraft 26.1** | [[👉 MC 26.1|id_id-26.1-Home]] |
+| **Minecraft 26.3** | [[👉 MC 26.3|id_id-26.3-Home]] |
 
 ---
 
