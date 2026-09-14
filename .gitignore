@@ -1,6 +1,8 @@
 
 .gradle/
 build/
+**/.gradle/
+**/build/
 
 # Platform Publisher API Token Security Vault
 *platform_tokens.json
